@@ -36,5 +36,9 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
   
   Paperclip.options[:command_path] = 'c:/Program Files/ImageMagick-6.9.0-Q16'
-  
+
+  #required for Devise Gem  
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+
 end
